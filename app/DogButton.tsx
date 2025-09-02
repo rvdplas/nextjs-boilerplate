@@ -32,7 +32,8 @@ export default function DogButton() {
       setDogData({
         status: "error",
         message: "❌ Failed to fetch dog image",
-      })
+      });
+      console.error(err);
     } finally {
       setLoading(false);
     }

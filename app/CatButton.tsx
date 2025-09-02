@@ -25,6 +25,7 @@ export default function CatButton() {
 
     } catch (err) {
       setFact("❌ Failed to fetch cat fact");
+      console.error(err);
     } finally {
       setLoading(false);
     }
