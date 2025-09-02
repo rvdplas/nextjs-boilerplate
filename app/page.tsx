@@ -1,4 +1,6 @@
 import Image from "next/image";
+import CatButton from "./CatButton";
+import DogButton from "./DogButton";
 
 type SP = { [key: string]: string | string[] | undefined };
 
@@ -42,6 +44,9 @@ export default async function Home(props: { searchParams: Promise<SP> }) {
         <a href="/?error=true" className="text-red-600 underline">
           Throw 500
         </a>
+
+        <CatButton />
+        <DogButton />
 
         <div className="flex gap-4 items-center flex-col sm:flex-row"></div>
       </main>
